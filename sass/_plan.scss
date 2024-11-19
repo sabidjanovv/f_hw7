@@ -1,0 +1,102 @@
+.plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 80px 0;
+}
+
+.plan-left,
+.plan-right {
+  width: 45%;
+}
+
+.plan-left h1 {
+  color: #19191b;
+  font-size: 60px;
+}
+
+.plan-right {
+  width: 346px;
+  background-color: #f7f7fb;
+  border-radius: 10px;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.plan-btn1 {
+  width: 160px;
+  padding: 18px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #000;
+  background-color: #f7f7fb; // Default holatda ko'k rang
+  transition: background-color 0.3s, color 0.3s; // Animatsiya qo'shildi
+}
+
+.plan-btn1:hover {
+  background-color: #5454d4; // Hover holatda boshqa rang
+  color: #fff; // Matn rangi ko'k bo'ladi
+}
+
+.plan-btn2 {
+  width: 160px;
+  padding: 18px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #000;
+  background-color: #f7f7fb; // Default holatda ko'k rang
+  transition: background-color 0.3s, color 0.3s; // Animatsiya qo'shildi
+}
+
+.plan-btn2:hover {
+  background-color: #5454d4; // Hoverda boshqa rang
+  color: #fff; // Matn rangi ko'k bo'ladi
+}
+
+/* Ikkinchi tugma hover bo'lganda birinchi tugma oq bo'lishi */
+.plan-btn2:hover ~ .plan-btn1 {
+  background-color: white; // Birinchi tugma oq rangga o'zgaradi
+  color: #fff; // Matn rangi ko'k bo'ladi
+}
+
+@media (max-width: 1020px) {
+  .plan {
+    flex-wrap: wrap;
+  }
+  .plan-left {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .plan-right {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 880px) {
+  .plan-left h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 550px) {
+  .plan-left h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 430px) {
+  .plan-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .plan-btn1 {
+    width: 120px;
+  }
+  .plan-btn2 {
+    width: 145px;
+  }
+}
