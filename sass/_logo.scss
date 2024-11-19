@@ -1,0 +1,26 @@
+.logo-items {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+
+//   @media (max-width: 768px) {
+//     overflow-x: auto; // Scrollni faollashtiradi
+//     white-space: nowrap; // Elementlar bir qator bo'lib qoladi
+//     padding-bottom: 10px; // Scrollbar uchun qulaylik
+
+//     &::-webkit-scrollbar {
+//       height: 8px; // Scrollbar balandligi
+//     }
+
+//     &::-webkit-scrollbar-thumb {
+//       background: #ccc; // Scrollbar rangi
+//       border-radius: 4px; // Scrollbar burchaklarini yumaloqlash
+//     }
+
+//     &::-webkit-scrollbar-thumb:hover {
+//       background: #999; // Hover effekti uchun scrollbar rangi
+//     }
+//   }
+}
